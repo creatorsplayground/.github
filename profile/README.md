@@ -1,7 +1,5 @@
 # Creator's playground
 
-# Creator's playground
-
 - Good to see you!
 - We can easily create ideas that were only in your imagination.
 
