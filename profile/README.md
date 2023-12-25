@@ -66,41 +66,61 @@ flowchart TB
   subgraph public-community[Public Community]
     subgraph pc-1[ ]
           direction TB
-          cm1([Community])
-          cm1-tp1([Topic])
-          cm1-tp2([Topic])
-          cm1-th1([Thread])
-          cm1-th2([Thread])
-          cm1-th3([Thread])
-          cm1-th4([Thread])
-          cm1---cm1-tp1
-          cm1---cm1-tp2
-          cm1-tp1---cm1-th1
-          cm1-tp1---cm1-th2
-          cm1-tp2---cm1-th3
-          cm1-tp2---cm1-th4
+          cm01([Community])
+          cm01-tp01([Topic])
+          cm01-tp02([Topic])
+          cm01-th01([Thread])
+          cm01-th02([Thread])
+          cm01-th03([Thread])
+          cm01-th04([Thread])
+          cm01---cm01-tp01
+          cm01---cm01-tp02
+          cm01-tp01---cm01-th01
+          cm01-tp01---cm01-th02
+          cm01-tp02---cm01-th03
+          cm01-tp02---cm01-th04
       end
 
     subgraph pc-2[ ]
           direction TB
-          cm2([Community])
-          tp3([Topic])
-          tp4([Topic])
-          th5([Thread])
-          th6([Thread])
-          th7([Thread])
-          th8([Thread])
-          cm2---tp3
-          cm2---tp4
-          tp3---th5
-          tp3---th6
-          tp4---th7
-          tp4---th8
+          cm02([Community])
+          cm02-tp01([Topic])
+          cm02-tp02([Topic])
+          cm02-th01([Thread])
+          cm02-th02([Thread])
+          cm02-th03([Thread])
+          cm02-th04([Thread])
+          cm02---cm02-tp01
+          cm02---cm02-tp02
+          cm02-tp01---cm02-th01
+          cm02-tp01---cm02-th02
+          cm02-tp02---cm02-th03
+          cm02-tp02---cm02-th04
+    end
+
+    subgraph pc-3[ ]
+          direction TB
+          cm03([Community])
+          cm03-tp01([Topic])
+          cm03-tp02([Topic])
+          cm03-th01([Thread])
+          cm03-th02([Thread])
+          cm03-th03([Thread])
+          cm03-th04([Thread])
+          cm03---cm03-tp01
+          cm03---cm03-tp02
+          cm03-tp01---cm03-th01
+          cm03-tp01---cm03-th02
+          cm03-tp02---cm03-th03
+          cm03-tp02---cm03-th04
     end
 
   end
   creator1---pc-1
+  creator1---pc-2
   creator2---pc-1
   creator2---pc-2
+  creator2---pc-3
   creator3---pc-2
+  creator3---pc-3
 ```
