@@ -78,8 +78,10 @@ flowchart TB
     end
   end
 
-  prsnlFrm1---creator1
-  prsnlFrm2---creator2
+  prsnlFrm1--do everything---creator1
+  prsnlFrm1-.only read.-creator2
+  prsnlFrm2-.only read.-creator1
+  prsnlFrm2--do everything---creator2
   creator1---shrFrm1
   creator1---shrFrm2
   creator2---shrFrm1
